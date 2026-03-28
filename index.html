@@ -19,7 +19,7 @@ body {
   background: white; 
   margin-left: 3px;
   vertical-align: bottom;
-  animation: blink 0.7s step-start infinite; /* быстрее мигание */
+  animation: blink 0.7s step-start infinite;
 }
 
 @keyframes blink {
@@ -29,22 +29,15 @@ body {
 </head>
 <body>
 
-<p><span id="text"></span><span class="cursor"></span></p>
+<p id="text"></p><span class="cursor"></span>
 
 <script>
-let msg = "Добро пожаловать на мой сайт...";
-let i = 0;
-
-function type() {
-  if (i < msg.length) {
-    document.getElementById("text").innerHTML += msg[i];
-    i++;
-    setTimeout(type, 50);
-  }
-}
-
-type();
-</script>
-
-</body>
-</html>
+let lines = [
+  "У меня есть такой текст , это слова песни,",
+  "Бывает вот не спишь пару ночей",
+  "И когда днём засыпаешь, неважно где",
+  "Снится не то, что дома. чужое такое всё",
+  "(Ты никому не нужен больше)",
+  "Кровью сыт по горло, шум в ушах, шутки",
+  "Про новые маршруты не вспоминал даже завтра",
+  "А после завтрака неловко
