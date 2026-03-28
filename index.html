@@ -11,14 +11,15 @@ body {
   margin: 0;
 }
 
+/* Курсор */
 .cursor {
   display: inline-block;
-  width: 10px;
-  height: 1em; /* высота как текст */
-  background: white;
-  margin-left: 2px;
+  width: 12px;       /* шире, чтобы было видно */
+  height: 1.2em;     /* чуть выше текста */
+  background: white; 
+  margin-left: 3px;
   vertical-align: bottom;
-  animation: blink 1s step-start infinite;
+  animation: blink 0.7s step-start infinite; /* быстрее мигание */
 }
 
 @keyframes blink {
